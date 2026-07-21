@@ -25,16 +25,7 @@ So, how to do this? Well, I could sit and grind coursera courses. But I might hu
 
 So, my approach in a nutshell is going to be that - make a bunch of crap.
 
-But what to make? How do i scaffold, so i'm not diving into something way outside of my wheelhouse? How do I make sure the tasks I'm being asked to do aren't overly contrived so as to not require me to exercise useful skills? Well, not an easy answer there, so I turned to the AIs.
-
-
-
-
-```
-Hey Gemini, I need to get competent at C. This includes not just the language syntax, but the tooling infrastructure, build systems, profiling, optimization, ecosystem and the standard approaches for dealing with typical programming tasks i.e. parallelism, networking, GUI, etc. etc. I don't know what I don't know, so can you flesh out this list and then I'll tell you what I want from you? 
-```
-
-A summary of its response yields this roadmap:
+But what to make? How do i scaffold, so i'm not diving into something way outside of my wheelhouse? How do I make sure the tasks I'm being asked to do aren't overly contrived so as to not require me to exercise useful skills? Well, not an easy answer there, so I turned to the AIs. First, I asked for a general taxonomy of the things I need to know to be generally competent at C. A summary of its response yields this roadmap:
 
 
 1. Core Language & Mechanics
