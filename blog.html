@@ -31,7 +31,27 @@
         <!-- This container displays the active article via zero-md -->
         <div id="post-view" style="display: none;">
             <p><a href="blog.html">← Back to all articles</a></p>
-            <zero-md id="md-viewer"></zero-md>
+            <zero-md id="md-viewer">
+		:host {
+                  <zero-md id="md-viewer">
+                      <template data-append>
+                          <style>
+                              :host {
+                                  --background-color: var(--bg);
+                                  --font-color: var(--text);
+                                  --link-color: var(--accent);
+                                  --code-bg-color: var(--bg-elev);
+                                  --border-color: var(--border);
+                              }
+                              .markdown-body {
+                                  background: var(--bg);
+                                  color: var(--text);
+                              }
+                          </style>
+                     </template>
+                  </zero-md>
+                }
+	    </zero-md>
         </div>
     </main>
 
