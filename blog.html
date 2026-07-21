@@ -13,6 +13,7 @@
         <a href="index.html">Home</a>
         <a href="projects.html">Projects</a>
         <a href="blog.html" aria-current="page">Technical Blog</a>
+        <a href="tutoring.html">Tutoring</a>
     </nav>
 
     <!-- Main Content Area -->
@@ -32,26 +33,22 @@
         <div id="post-view" style="display: none;">
             <p><a href="blog.html">← Back to all articles</a></p>
             <zero-md id="md-viewer">
-		:host {
-                  <zero-md id="md-viewer">
-                      <template data-append>
-                          <style>
-                              :host {
-                                  --background-color: var(--bg);
-                                  --font-color: var(--text);
-                                  --link-color: var(--accent);
-                                  --code-bg-color: var(--bg-elev);
-                                  --border-color: var(--border);
-                              }
-                              .markdown-body {
-                                  background: var(--bg);
-                                  color: var(--text);
-                              }
-                          </style>
-                     </template>
-                  </zero-md>
-                }
-	    </zero-md>
+                <template data-append>
+                    <style>
+                        :host {
+                            --background-color: var(--bg);
+                            --font-color: var(--text);
+                            --link-color: var(--accent);
+                            --code-bg-color: var(--bg-elev);
+                            --border-color: var(--border);
+                        }
+                        .markdown-body {
+                            background: var(--bg);
+                            color: var(--text);
+                        }
+                    </style>
+                </template>
+            </zero-md>
         </div>
     </main>
 
