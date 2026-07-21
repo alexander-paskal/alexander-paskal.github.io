@@ -60,11 +60,8 @@
 
             document.getElementById('blog-index').style.display = 'none';
             document.getElementById('post-view').style.display = 'block';
-            console.log('post name is', postName); 
             const viewer = document.getElementById('md-viewer');
 	    viewer.setAttribute('src', `blog/${postName}.md`);
-            
-            // Wait until custom elements are defined before setting the source
         }
     </script>
 </body>
