@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Technical Blog - Alexander Paskal</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Load the Zero-MD parser -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html" aria-current="page">Technical Blog</a>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main id="blog-content">
+        <!-- This container handles the main Blog Index List -->
+        <div id="blog-index">
+            <h1>Technical Blog</h1>
+            <p>Thoughts on robots, autonomy architectures, and machine learning.</p>
+            
+            <ul class="blog-list">
+                <li><a href="blog.html?post=article1">01. Building Distributed Autonomy Simulations</a></li>
+                <li><a href="blog.html?post=article2">02. Edge ML Optimization Techniques</a></li>
+            </ul>
+        </div>
+
+        <!-- This container displays the active article via zero-md -->
+        <div id="post-view" style="display: none;">
+            <p><a href="blog.html">← Back to all articles</a></p>
+            <zero-md id="md-viewer"></zero-md>
+        </div>
+    </main>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const postName = urlParams.get('post');
+
+        if (postName) {
+
+            document.getElementById('blog-index').style.display = 'none';
+            document.getElementById('post-view').style.display = 'block';
+            console.log('post name is', postName); 
+            const viewer = document.getElementById('md-viewer');
+	    viewer.setAttribute('src', `blog/${postName}.md`);
+            
+            // Wait until custom elements are defined before setting the source
+        }
+    </script>
+</body>
+</html>
