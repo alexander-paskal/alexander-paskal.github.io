@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "path": "blog/c_course_intro.md",
+    "post": "c_course_intro",
+    "name": "C Course Intro",
+    "date_created": "2026-07-21",
+    "date_updated": "2026-07-21"
+  }
+]
