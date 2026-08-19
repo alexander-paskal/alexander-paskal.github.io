@@ -5,5 +5,12 @@
     "name": "C Course Intro",
     "date_created": "2026-07-21",
     "date_updated": "2026-07-21"
+  },
+  {
+    "path": "blog/apprenticeship_model_learning.md",
+    "post": "apprenticeship_model_learning",
+    "name": "Apprenticeship as a Model for Learning",
+    "date_created": "2026-08-19",
+    "date_updated": "2026-08-19"
   }
 ]
