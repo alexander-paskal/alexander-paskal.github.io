@@ -12,5 +12,12 @@
     "name": "Apprenticeship as a Model for Learning",
     "date_created": "2026-08-19",
     "date_updated": "2026-08-19"
+  },
+  {
+    "path": "blog/c_course_project1.md",
+    "post": "c_course_project1",
+    "name": "C course - Project 1 - Dynamic Array & Custom Arena Allocator",
+    "date_created": "2026-08-20",
+    "date_updated": "2026-08-20"
   }
 ]
