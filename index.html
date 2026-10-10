@@ -8,9 +8,9 @@
 <body>
     <nav>
         <a href="index.html" aria-current="page">Home</a>
-        <a href="projects.html">Projects</a>
+        <!-- <a href="projects.html">Projects</a> -->
         <a href="blog.html">Blog</a>
-        <a href="tutoring.html">Tutoring</a>
+        <!-- <a href="tutoring.html">Tutoring</a> -->
     </nav>
 
     <section id="home">
@@ -25,19 +25,66 @@
 
         <div class="gallery" style="grid-template-columns: minmax(140px, 220px);">
             <figure>
-                <img src="assets/puppy2.jpg" alt="A golden retriever puppy sprinting across a lawn with its tongue out.">
-                <figcaption>Golden retriever puppy, mid-zoomies.</figcaption>
+                <img src="assets/shades.jpg">
             </figure>
         </div>
+
+        <h2>Work History</h2>
+        <ul>
+            <li>(2026 - Present) Machine Learning Engineer at Motional working on large-scale self-play for autonomous driving</li>
+            <li>(2025 - 2026) Autonomy Engineer at Shield AI working on flight software for CCAs</li>
+            <li>(2023 - 2025) Engineer at Johns Hopkins Applied Physics Laboratory working on RL for command & control</li>
+        </ul>
+
+        <h2>Education</h2>
+        <ul>
+            <li> (2021 - 2023) M.S. - University of California, San Diego, Electrical & Computer Engineering (class of 2023)</li>
+            <li> (2014 - 2019) B.S. - University of Maryland, Bioengineering</li>
+        </ul>
+
+
     </section>
+
+
+     <section id="projects">
+
+        <h1>Open-Source Projects</h1>
+        <div class="grid">
+            <div class="card">
+                <h3>task.ai</h3>
+                <p>An AI-powered CLI todo-list app with a browser interface</p>
+                <br><br>
+                <a href="https://taskai.readthedocs.io/en/latest/">Project Docs</a>
+            </div>
+        </div>
+    </section>
+
 
     <section id="contact">
         <h2>Contact</h2>
         <div class="links">
             <a href="https://github.com/alexander-paskal">GitHub</a>
             <a href="https://www.linkedin.com/in/alex-paskal/">LinkedIn</a>
+            <button type="button" class="copy-email" data-email="alexcpaskal@gmail.com">Email</button>
         </div>
     </section>
+
+
+<script>
+    document.querySelectorAll('.copy-email').forEach(btn => {
+        btn.addEventListener('click', async() => {
+            const original = btn.textContent;
+            try {
+                await navigator.clipboard.writeText(btn.dataset.email);
+                btn.textContent = 'Copied!';
+            } catch {
+                btn.textContent = btn.dataset.email;
+            }
+
+            setTimeout(() => (btn.textContent=original), 1500)
+        });
+    });
+</script>
 
 </body>
 </html>
