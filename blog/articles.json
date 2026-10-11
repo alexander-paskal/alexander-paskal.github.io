@@ -19,5 +19,12 @@
     "name": "C course - Project 1 - Dynamic Array & Custom Arena Allocator",
     "date_created": "2026-08-20",
     "date_updated": "2026-08-20"
+  },
+  {
+    "path": "blog/on_ai_and_software_burnout.md",
+    "post": "on_ai_and_software_burnout",
+    "name": "On AI and Software Burnout",
+    "date_created": "2026-10-10",
+    "date_updated": "2026-10-10"
   }
 ]
